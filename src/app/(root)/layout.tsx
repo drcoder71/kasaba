@@ -1,9 +1,10 @@
+import Header from '@/components/shared/header'
 import { ChildrenProps } from '../../types'
 
 const RootLayout = ({ children }: ChildrenProps) => {
     return (
         <div>
-            {/* Navbar */}
+            <Header />
             <main>{children}</main>
             {/* footer */}
         </div>
