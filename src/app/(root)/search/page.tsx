@@ -5,7 +5,7 @@ import SearchCard from "@/components/shared/search-card";
 import { SearchData } from "@/data/search-data";
 import { SearchDataType } from "@/types";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 function SearchPage() {
   const [query, setQuery] = useState("");
@@ -18,6 +18,11 @@ function SearchPage() {
       setItems(SearchData);
       setLoading(false);
     }, 2000);
+  }, []);
+
+  const clearInput = useCallback(() => {
+    setQuery("");
+    setItems([])
   }, []);
 
   const filteredItems = items.filter((item) =>
@@ -43,7 +48,7 @@ function SearchPage() {
             className=" outline-none w-full py-2"
           />
           {query && (
-            <button onClick={() => setQuery("")} className=" py-2 px-3 ">
+            <button onClick={clearInput} className=" py-2 px-3 ">
               ✕
             </button>
           )}

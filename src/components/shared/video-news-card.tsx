@@ -20,7 +20,7 @@ const VideoNewsCard = memo(({
     return (
         <div className="flex items-center justify-start gap-3 group">
             <div className="relative w-32 h-20">
-                <Image src={`${thumbnails}`} width={132} height={78} className=" object-cover min-w-32 h-20" alt="photo" />
+                <Image src={`${thumbnails}`} width={132} height={78} className=" object-cover min-w-32 h-20" alt="photo" loading="lazy" />
                 <div className=" absolute w-full h-full flex items-center justify-center top-0 left-0 bg-gray-800/50">
                     <Play className=" w-6 h-6 text-white" />
                 </div>
