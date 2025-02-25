@@ -34,3 +34,11 @@ export interface SearchDataType {
   };
   news_type: string
 }
+
+export interface PhotoNewsType {
+  id: string | number;
+  title: string;
+  img: string;
+  time: string;
+  description?: string;
+}

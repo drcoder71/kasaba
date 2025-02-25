@@ -24,7 +24,7 @@ const HomePage = () => {
                     <Ads src='/img/xalq_bank.png' />
                 </Container>
             </section>
-            <section id='media' className='bg-[#000573]/75 backdrop-blur-[9.30px]'>
+            <section id='media' className='relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-[#1e1e1e]/90 before:backdrop-blur-[9.30px] before:-z-10 after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-[#000573]/75 after:backdrop-blur-[9.30px] after:-z-10'>
                 <section id='vide-news' className='max-w-[1440px] w-full mx-auto'>
                     <MediaNews />
                 </section>
