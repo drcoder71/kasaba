@@ -1,7 +1,7 @@
 import { SearchDataType } from "@/types";
-import React from "react";
+import React, { memo } from "react";
 
-function SearchCard({
+const SearchCard = memo(({
   data: {
     title,
     news_type,
@@ -11,7 +11,7 @@ function SearchCard({
 }: {
   data: SearchDataType;
   query: string;
-}) {
+  }) => {
   const highlightMatch = (text: string, query: string) => {
     if (!query) return text;
     const regex = new RegExp(`(${query})`, "gi");
@@ -38,6 +38,6 @@ function SearchCard({
       <h2 className=" font-bold text-xl ">{highlightMatch(title, query)}</h2>
     </div>
   );
-}
+})
 
 export default SearchCard;
