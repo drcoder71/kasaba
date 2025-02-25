@@ -31,7 +31,7 @@ const VideoNews = () => {
                     <ChevronRight className='group-hover:translate-x-1 transition-transform' />
                 </button>
             </div>
-            <div className="grid grid-cols-2 py-10">
+            <div className="grid grid-cols-2 py-5">
                 <div className=" flex flex-col gap-5">
                     <ReactPlayer
                         url={VideoNewsData[0].video}
