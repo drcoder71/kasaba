@@ -1,1 +1,1 @@
-export { default as TopNews } from "../shared/top-news";
+export { default as TopNews } from "./home/top-news";

@@ -3,8 +3,8 @@ import { TopNewsData } from '@/data/top-news-data'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
-import Container from './container'
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../../ui/carousel'
+import Container from '../../shared/container'
 
 const TopNews = () => {
     const [api, setApi] = useState<CarouselApi>()
