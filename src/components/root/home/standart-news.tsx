@@ -29,7 +29,7 @@ const StandartNews = () => {
                     <div className='flex mt-4 justify-start gap-7 flex-wrap'>
                         {
                             data.map((i) => (
-                                <div key={i.id} className='w-[260px]'>
+                                <div key={i.id} className='w-[31%]'>
                                     <StandartNewsCard variant='card' data={i} key={i.id} />
                                 </div>
                             ))
