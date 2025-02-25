@@ -1,7 +1,6 @@
 'use client'
 import { TopNewsData } from '@/data/top-news-data'
 import { cn } from '@/lib/utils'
-import { useCarouselStore } from '@/store/carousel-store'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
