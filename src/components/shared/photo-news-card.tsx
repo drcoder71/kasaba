@@ -41,7 +41,7 @@ function PhotoNewsCard({
 }) {
     return (
         <div className={PhotoNewsVariants(variant).card}>
-            <Image width={380} height={225} className=" w-full h-full object-cover " src={`${img}`} alt="Photo" />
+            <Image width={380} height={225} className=" w-full h-full object-cover " src={`${img}`} alt="Photo" loading="lazy" />
             <div className=" z-20 absolute top-0 left-0 w-full h-full flex flex-col justify-end">
                 <div className={PhotoNewsVariants(variant).blurBox}>
                     <p className={PhotoNewsVariants(variant).p}>{time}</p>
