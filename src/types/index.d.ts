@@ -11,3 +11,10 @@ export interface VideoNewsType {
   thumbnails?: string;
 }
   
+export interface PhotoNewsType {
+  id: string | number;
+  title: string;
+  img: string;
+  time: string;
+  description?: string;
+}
