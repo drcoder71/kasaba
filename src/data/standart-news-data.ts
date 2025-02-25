@@ -1,4 +1,6 @@
-export const StandartNewsData = Array.from({ length: 10 }, (_, index) => ({
+import { StandardNewsDataType } from "@/types";
+
+export const StandardNewsData:StandardNewsDataType[] = Array.from({ length: 10 }, (_, index) => ({
   id: `id-${index + 1}`,
   title: `O‘zbekiston Prezidenti BAA Vitse-prezidenti, Bosh vaziri bilan uchrashdi ${index}`,
   description: `Mamlakatimiz taraqqiyotining yangi bosqichida jamiyatda adolatni qaror toptirish, qonuniylikni mustahkamlash hamda inson...`,
