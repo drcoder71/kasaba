@@ -2,15 +2,15 @@
 import { Container } from '@/components/shared'
 import NewsOption from '@/components/shared/news-option'
 import StandartNewsCard from '@/components/shared/standart-news-card'
-import { StandartNewsData } from '@/data/standart-news-data'
+import { StandardNewsData } from '@/data/standart-news-data'
 import { ChevronRight } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 
 const StandartNews = () => {
-    const [data, setData] = useState([...StandartNewsData])
+    const [data, setData] = useState([...StandardNewsData])
 
     useEffect(() => {
-        setData(StandartNewsData.slice(1))
+        setData(StandardNewsData.slice(1))
     }, []);
 
     return (
@@ -25,7 +25,7 @@ const StandartNews = () => {
             </div>
             <div className='flex gap-x-8'>
                 <div className='w-[75%] flex flex-col gap-y-7'>
-                    <StandartNewsCard data={StandartNewsData[0]} variant='fit' />
+                    <StandartNewsCard data={StandardNewsData[0]} variant='fit' />
                     <div className='flex mt-4 justify-start gap-7 flex-wrap'>
                         {
                             data.map((i) => (
